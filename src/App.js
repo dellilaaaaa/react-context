@@ -45,9 +45,9 @@ function App() {
         {/* <Link to="/Login" className="me-5">
           Login
         </Link> */}
-        <Link to="/cat/:namaKucing" className="me-5">
+        {/* <Link to="/cat/:namaKucing" className="me-5">
           Product Kucing
-        </Link>
+        </Link> */}
         {/* <h1>Haloooo</h1> */}
       </div>
       <Switch>

@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 // import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from "react-bootstrap";
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,9 +34,9 @@ function App() {
           Home
         </Link>
         {isLogin ? (
-          <button onClick={handleLogout}>
+          <Button onClick={handleLogout}>
             Logout
-          </button>
+          </Button>
         ) : (
           <Link to="/Login" className="me-5">
             Login

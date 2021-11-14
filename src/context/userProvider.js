@@ -5,8 +5,10 @@ export const userContext = createContext()
 function UserProvider(props) {
     const [isLogin, setIsLogin] = useState(false)
     useEffect(() => {
-        // localStorage.getItem(isLogin)
-        setIsLogin(localStorage.isLogin)
+        let ambildata = localStorage.getItem("isLogin")
+        let local = JSON.parse(ambildata)
+        setIsLogin(local)
+        // setIsLogin(localStorage.isLogin)
         
     }, [])
     return(
